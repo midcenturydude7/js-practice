@@ -9,3 +9,4 @@ Assume the test input string is always a valid string. For example, the test inp
 const getAge = (str) => Number(str[0]);
 
 console.log(getAge("1 year old")); // 1
+
