@@ -11,5 +11,22 @@ The second value in the first pair in the array is 0, since the bus is empty in 
 */
 
 const number = (busStops) => {
-  return busStops.reduce((people, [on, off]) => people + on - off, 0);
-}
+  return busStops.reduce((people, [on, off]) => people + (on - off), 0);
+};
+console.log(
+  number([
+    [10, 0],
+    [3, 5],
+    [5, 8],
+  ])
+); // 5
+console.log(
+  number([
+    [3, 0],
+    [9, 1],
+    [4, 10],
+    [12, 2],
+    [6, 1],
+    [7, 10],
+  ])
+); // 17
