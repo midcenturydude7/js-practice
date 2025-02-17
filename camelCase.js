@@ -39,6 +39,11 @@ const camelCase4 = (str) => {
     .join("");
 };
 
+// Complete the solution to ensure each method has a comment explaining its purpose.
+const camelCase5 = (str) => {
+  return str.split(/(?=[A-Z])/).join(" ");
+};
+
 console.log(camelCase("camelCasing")); // camel Casing
 console.log(camelCase2("camelCasing")); // camel Casing
 console.log(camelCase3("camelCasing")); // camel Casing
