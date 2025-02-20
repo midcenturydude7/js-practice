@@ -9,7 +9,7 @@ Note: The function accepts an integer and returns an integer.
 */
 
 const squareDigits = (num) => {
-  return [...String(num)].map((dig) => dig * dig).join("");
+  return Number([...String(num)].map((dig) => dig * dig).join(""));
 };
 
 console.log(squareDigits(9119)); // 811181
